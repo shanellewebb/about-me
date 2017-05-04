@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<style>
+body {
+ font-family: 'century gothic';
+  margin: 0 auto;
+  max-width: 1000px;
+  background: pink;
+      background-size: cover;
+      background-position: center;
+}
+
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'century gothic';
+  text-align: center;
+  font-size: 75px;
+  color: grey;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: grey;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+.first{
+  background-image: url("http://i.imgur.com/nI9L1Cm.jpg?2");
+}
+.second{
+  background-image: url("http://i.imgur.com/VzhXqGj.jpg?1");
+}
+.dessert{
+  background-image: url("http://i.imgur.com/hVek6RG.jpg");
+}
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 30px 32px 0 32px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+
+<body>
+<h1>About Me</h1>
+<h2><i>An introduction to the woman behind this blog</i></h2>
+
+
+<center><img src="http://i.imgur.com/WFyH6M6l.jpg?1"> </center>
+
+<div class="first">
+  <p>Who am I? <br />
+  <small>Hello! My name is Shanelle Webb. I am 19 years old and am currently in my first year of university at the University of Southampton where I study Politics and International Relations. I am passionate about politics, journalism, poverty and youth work, research, fashion, cooking, as well as international development. I am an advocate for women’s rights and campaigning, and have experience in journalism, public speaking, and events management.  </small></p>
+</div>
+
+<div class="second">
+  <p>What are my interests? <br />
+  <small>I am very interested in a career in global politics, political research or journalism, and would like to take my degree forward in the form of a Masters or a PhD; whilst starting a charity of my own aimed at inner city youths who face adversity before completing secondary school. My experience with private tuition as well as voluntary work for my local youth club and other charities instilled this passion in me, and I hope to take it to a national level someday. I love to travel, having taken a Gap Year last year, where I worked and travelled around Europe with a friend, as well as spent 4 weeks in Zimbabwe doing HIV/AIDS work on the ICS programme.  </small></p>
+</div>
+  
+<div class="dessert">
+  <p>What experience do I have?<br />
+  <small>My passion for athletics and leadership also saw me serve as a Corporal in the Air Cadets for three years, giving me the opportunity to learn about team work, leadership, as well as how to be organised and resilient whilst facing challenges. I was even awarded the Wandsworth Borough Commanders Commendation award for selfless bravery in 2014 whilst serving as a cadet. 
+I also have two-months’ worth of work experience on a placement with the Mayor of my borough and the Leaders Office, and have been part of a steering group which decides where the spending for my boroughs young people goes since December 2015. In October 2016 I hosted their 2nd Annual AGM and made a speech about my journey, which was well received, and I was nominated to be the young representative on their Board of Directors. 
+
+
+</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+</body>
